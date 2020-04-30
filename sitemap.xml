@@ -47,6 +47,11 @@
   </url>
   
   <url>
+    <loc>https://myurl.com/blog/tags/another-tag/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>
+  
+  <url>
     <loc>https://myurl.com/blog/tags/second-tag/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
@@ -57,12 +62,77 @@
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/tags/another-tag/</loc>
-    <lastmod>2020-04-28</lastmod>
+    <loc>https://myurl.com/blog/posts/ghpages/</loc>
+    <lastmod>2020-04-30</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/posts/ghpages/</loc>
+    <loc>https://myurl.com/blog/docs/404/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/page-list/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/posts/thirdpost/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/tags/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/tags/second-tag/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/posts/fourthpost/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/posts/secondpost/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/about/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/tags/number-2/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/posts/firstpost/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/posts/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/posts/ghpages/</loc>
+    <lastmod>2020-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/docs/tags/another-tag/</loc>
     <lastmod>2020-04-30</lastmod>
   </url>
 </urlset>
