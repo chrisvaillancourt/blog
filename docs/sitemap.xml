@@ -47,17 +47,22 @@
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/tags/number-2/</loc>
+    <loc>https://myurl.com/blog/tags/second-tag/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/tags/second-tag/</loc>
+    <loc>https://myurl.com/blog/tags/number-2/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
     <loc>https://myurl.com/blog/tags/another-tag/</loc>
     <lastmod>2020-04-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/blog/posts/ghpages/</loc>
+    <lastmod>2020-04-30</lastmod>
   </url>
 </urlset>
