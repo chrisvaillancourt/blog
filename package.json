@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "github.com/chrisvaillancourt/blog.git"
   },
   "author": {
     "name": "Zach Leatherman",
