@@ -2,137 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://myurl.com/blog/posts/firstpost/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/posts/firstpost/</loc>
     <lastmod>2018-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/posts/secondpost/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/posts/secondpost/</loc>
     <lastmod>2018-07-04</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/posts/thirdpost/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/posts/thirdpost/</loc>
     <lastmod>2018-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/posts/fourthpost/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/posts/fourthpost/</loc>
     <lastmod>2018-09-30</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/about/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/about/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/posts/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/posts/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/page-list/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/page-list/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/tags/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/tags/another-tag/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/second-tag/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/tags/second-tag/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/number-2/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/tags/number-2/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/another-tag/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/blog/posts/ghpages/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/404/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/page-list/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/posts/thirdpost/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/tags/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/tags/second-tag/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/posts/fourthpost/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/posts/secondpost/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/about/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/tags/number-2/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/posts/firstpost/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/posts/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/posts/ghpages/</loc>
-    <lastmod>2020-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://myurl.com/blog/docs/tags/another-tag/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/posts/ghpages/</loc>
     <lastmod>2020-04-30</lastmod>
   </url>
 </urlset>
