@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-base-blog",
-  "version": "5.0.2",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "name": "Blog",
+  "version": "0.1",
+  "description": "A blog by Chris Vaillancourt",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
@@ -14,15 +14,15 @@
     "url": "github.com/chrisvaillancourt/blog.git"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Chris Vaillancourt",
+    "email": "",
+    "url": ""
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/chrisvaillancourt/blog/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://github.com/chrisvaillancourt/blog",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.3",
