@@ -25,14 +25,14 @@
 
 <h3 id="day-5%3A-may-16%2C-2020">Day 5: May 16, 2020 <a class="direct-link" href="#day-5%3A-may-16%2C-2020">#</a></h3>
 <h4 id="today's-progress">Today's Progress <a class="direct-link" href="#today's-progress">#</a></h4>
-<p>Today I continued through <a href="https://frontendmasters.com/courses/functional-javascript-v3/">Functional-Light JavaScript</a> and learned about transduction and generic data structure operations.</p>
+<p>Today I continued through <a href="https://frontendmasters.com/courses/functional-javascript-v3/">Functional-Light JavaScript</a> and covered transduction and generic data structure operations.</p>
 <h4 id="thoughts">Thoughts <a class="direct-link" href="#thoughts">#</a></h4>
-<p>Sticking to 100DaysOfCode on the weekend is much harder when you aren't in the workday rhythm. I'm someone who <em>needs</em> routine to stay on track so I'm going to need to create a weekend coding routine.</p>
-<p>Regarding today's material: transduction is every bit as complicated as I was expecting. I'm going to have to revisit the topic and code up my own example to better understand what's going on.</p>
+<p>Transduction is every bit as complicated as I was expecting. I'm going to have to revisit the topic and code up my own example to better understand what's going on.</p>
+<p>On a personal note, sticking to 100DaysOfCode on the weekend is much harder when you aren't in the workday rhythm. I'm someone who <em>needs</em> routine to stay on track so I'm going to need to create a weekend coding routine to be successful.</p>
 <h4 id="work-examples">Work examples <a class="direct-link" href="#work-examples">#</a></h4>
 <h5 id="transduction">Transduction <a class="direct-link" href="#transduction">#</a></h5>
 <p>Transduction is the process of composing <code>map()</code>, <code>filter()</code>, and/or <code>reduce()</code>.</p>
-<p>We can't do a basic composition of <code>map</code>, <code>filter</code>, and <code>reduce</code> because each of those functions have a different shape (<em>Function shape</em>: the number and kinds of things you pass into it as well as the number and kinds of things that come out of it). <code>map</code>'s shape is one value in, one value out. <code>filter</code>'s shape is single value in, boolean value out. <code>reduce</code> takes two inputs, an accumulator and current value.</p>
+<p>We can't do a basic composition of <code>map</code>, <code>filter</code>, and <code>reduce</code> because each of those functions have a different shape (<em>function shape</em>: the number and kinds of things you pass into it as well as the number and kinds of things that come out of it). <code>map</code>'s shape is one value in, one value out. <code>filter</code>'s shape is single value in, boolean value out. <code>reduce</code> takes two inputs, an accumulator and current value.</p>
 <p>The plus side of transduction is we don't necessarily need to know what's going on behind the scenes with transduction to use it to our advantage. If we need to compose a <code>map()</code>, <code>filter()</code>, and/or <code>reduce()</code>, then we know we can use <code>transduce()</code>.</p>
 <p>Transduction reshapes <code>map()</code> and <code>filter</code> into the shape of reduce so we can compose them together. The reduce versions of <code>map()</code> and <code>filter()</code> are a bit different than the <code>reduce()</code> we're used to - it's actually a higher order reducer (a reducer function that takes a reducer function as a parameter).</p>
 <p>Here's transduction in code:</p>
