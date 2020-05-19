@@ -30,23 +30,160 @@ Monads utility comes from being able to work with a specific data value in a man
 A basic monad example is the `Just` monad:
 
 ```js
-function Just(val){
+function Just(val) {
   return { map, chain, ap }; // three core methods on all monads
 
   // makes another monad (like a regular array map function)
   // makes the same kind of monad -- like array maps make arrays
-  function map(fn){
-    return Just( fn( val ) );
+  function map(fn) {
+    return Just(fn(val));
   }
   // aka: bind, flatMap
-  // like mapping a monad, getting a monad, and then
-  // flattening the value from the monad.
-  function chain(fn){
-    return fn( val );
+  // like mapping a monad, getting a monad,
+  // and then flattening the value from the monad
+  function chain(fn) {
+    return fn(val);
   }
   // implies our value has to be a function in order to use this
-  function ap(anotherMonad){
-    return anotherMonad.map( val );
+  function ap(anotherMonad) {
+    return anotherMonad.map(val);
   }
 }
+
+var fortyOne = Just(41);
+// fortyTwo isn't the value 42, it's a monad wrapped around the value 42
+// map returns the same data value that we started with
+var fortyTwo = fortyOne.map(function inc(v) {
+  return v + 1;
+});
+function identity(v) {
+  return v;
+}
+// technically, we shouldn't get the value back
+// it should return a monad
+console.log(fortyOne.chain(identity)); // 41
+console.log(fortyTwo.chain(identity)); // 42
+
+var user1 = Just('kyle');
+var user2 = Just('Susan');
+
+var tuple = curry(2, function tuple(x, y) {
+  return [x, y];
+});
+
+/*
+  user1.map(tuple) returns a curried function with a monad wrapped around
+  the string 'Kyle'.
+  We then call ap on that monad and it calls map on the monad wrapping kyle.
+  ap allows us to take one value from a monad, put it into a closure and then use that as the mapper function
+  in the next monad.
+*/
+
+var users = user1.map(tuple).ap(user2);
+console.log(users.chain(identity)); // ['Kyle', 'Susan]
+```
+
+Maybe monad:
+
+```js
+'use strict';
+
+function curry(arity, fn) {
+  return (function nextCurried(prevArgs) {
+    return function curried(nextArg) {
+      var args = prevArgs.concat([nextArg]);
+      if (args.length >= arity) {
+        return fn(...args);
+      } else {
+        return nextCurried(args);
+      }
+    };
+  })([]);
+}
+
+function Just(val) {
+  return { map, chain, ap }; // three core methods on all monads
+
+  // makes another monad (like a regular array map function)
+  // makes the same kind of monad -- like array maps make arrays
+  function map(fn) {
+    return Just(fn(val));
+  }
+  // aka: bind, flatMap
+  // like mappung a monad, getting a monad, and then flattening the value from the monad
+  function chain(fn) {
+    return fn(val);
+  }
+  // implies our value has to be a function in order to use this
+  function ap(anotherMonad) {
+    return anotherMonad.map(val);
+  }
+}
+
+var fortyOne = Just(41);
+// fortyTwo isn't the value 42, it's a monad wrapped around the value 42
+// map returns the same data value that we started with
+var fortyTwo = fortyOne.map(function inc(v) {
+  return v + 1;
+});
+function identity(v) {
+  return v;
+}
+// technically, we shouldn't get the value back
+// it should return a monad
+console.log(fortyOne.chain(identity)); // 41
+console.log(fortyTwo.chain(identity)); // 42
+
+var user1 = Just('kyle');
+var user2 = Just('Susan');
+
+var tuple = curry(2, function tuple(x, y) {
+  return [x, y];
+});
+
+/*
+  user1.map(tuple) returns a curried function with a monad wrapped around 
+  the string 'Kyle'.
+  We then call ap on that monad and it calls map on the monad wrapping kyle.
+  ap allows us to take one value from a monad, put it into a closure and then use that as the mapper function
+  in the next monad.
+*/
+
+var users = user1.map(tuple).ap(user2);
+console.log(users.chain(identity)); // ['Kyle', 'Susan]
+
+// --------------------maybe monad---------------------------------------------
+var someObj = {
+  something: {
+    else: {
+      entirely: 42,
+    },
+  },
+};
+// we can't ever get anything from Nothing
+// useful if we don't want something to occur
+// like if a property is missing
+
+function Nothing(){
+  return { map: Nothing, chain: Nothing, ap: Nothing}
+}
+var Maybe = { Just, Nothing, of: Just}
+
+// if given null or undefined (because of the ==)
+// we get a Nothing monad
+// or, we get a Just monad
+function fromNullable(val){
+  if(val == null) return Maybe.Nothing();
+  else return Maybe.of(val)
+}
+// if we call this on a random object, property, we'll either get a
+// Nothing monad, or a Just monad wrapping that property value
+var prop = curry(2, function prop(prop, obj){
+  return fromNullable(obj[prop])
+})
+
+Maybe.of( someObj ) // makes a Just monad of someObj
+.chain( prop( 'something' ) ) // returns a curried function waiting
+.chain( prop( 'else ' ) ) // we can keep calling this because we know we'll either get a Nothing or Just monad
+.chain( prop( 'something' ) )
 ```
