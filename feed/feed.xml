@@ -5,7 +5,7 @@
 	
 	<link href="https://chrisvaillancourt.github.io/blog/feed/feed.xml" rel="self"/>
 	<link href="https://chrisvaillancourt.github.io/blog/"/>
-	<updated>2020-05-17T17:00:00-07:00</updated>
+	<updated>2020-05-19T17:00:00-07:00</updated>
 	<id>https://chrisvaillancourt.github.io/blog/</id>
 	<author>
 		<name>Chris Vaillancourt</name>
@@ -251,7 +251,7 @@
 		<link href="https://chrisvaillancourt.github.io/blog/posts/may-18-20/"/>
 		<updated>2020-05-17T17:00:00-07:00</updated>
 		<id>https://chrisvaillancourt.github.io/blog/posts/may-18-20/</id>
-		<content type="html">&lt;h3 id=&quot;day-5%3A-may-16%2C-2020&quot;&gt;Day 5: May 16, 2020 &lt;a class=&quot;direct-link&quot; href=&quot;#day-5%3A-may-16%2C-2020&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+		<content type="html">&lt;h3 id=&quot;day-6%3A-may-16%2C-2020&quot;&gt;Day 6: May 16, 2020 &lt;a class=&quot;direct-link&quot; href=&quot;#day-6%3A-may-16%2C-2020&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;h4 id=&quot;today&#39;s-progress&quot;&gt;Today&#39;s Progress &lt;a class=&quot;direct-link&quot; href=&quot;#today&#39;s-progress&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Today I scratched the surface of monads in &lt;a href=&quot;https://frontendmasters.com/courses/functional-javascript-v3&quot;&gt;Functional-Light JavaScript&lt;/a&gt;.&lt;/p&gt;
 &lt;h4 id=&quot;thoughts&quot;&gt;Thoughts &lt;a class=&quot;direct-link&quot; href=&quot;#thoughts&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
@@ -271,11 +271,11 @@
 	<entry>
 		<title>100 Days of Code - Day 8</title>
 		<link href="https://chrisvaillancourt.github.io/blog/posts/may-20-2020/"/>
-		<updated>2020-05-17T17:00:00-07:00</updated>
+		<updated>2020-05-19T17:00:00-07:00</updated>
 		<id>https://chrisvaillancourt.github.io/blog/posts/may-20-2020/</id>
-		<content type="html">&lt;h3 id=&quot;day-5%3A-may-16%2C-2020&quot;&gt;Day 5: May 16, 2020 &lt;a class=&quot;direct-link&quot; href=&quot;#day-5%3A-may-16%2C-2020&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+		<content type="html">&lt;h3 id=&quot;day-8%3A-may-16%2C-2020&quot;&gt;Day 8: May 16, 2020 &lt;a class=&quot;direct-link&quot; href=&quot;#day-8%3A-may-16%2C-2020&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;h4 id=&quot;today&#39;s-progress&quot;&gt;Today&#39;s Progress &lt;a class=&quot;direct-link&quot; href=&quot;#today&#39;s-progress&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;Today I went back to the basic on CSS and started &lt;a href=&quot;https://frontendmasters.com/courses/css-in-depth-v2/&quot;&gt;CSS In-Depth, v2&lt;/a&gt; by Estelle Wely. Today&#39;s coursework focused on the nuances of CSS selectors including, Relational selectors and combinators, attribute selectors, pseudo selectors, and structural selectors.&lt;/p&gt;
+&lt;p&gt;Today I went back to the basic with CSS and started &lt;a href=&quot;https://frontendmasters.com/courses/css-in-depth-v2/&quot;&gt;CSS In-Depth, v2&lt;/a&gt; by Estelle Weyl. Today&#39;s coursework focused on the nuances of CSS selectors including, Relational selectors and combinators, attribute selectors, pseudo selectors, and structural selectors.&lt;/p&gt;
 &lt;h4 id=&quot;thoughts&quot;&gt;Thoughts &lt;a class=&quot;direct-link&quot; href=&quot;#thoughts&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Revisiting some of the &#39;basics&#39; of CSS reminds me of the importance of the fundamentals. I find I always learn a thing or two from introductory material and Estelle&#39;s course is no exception. I wasn&#39;t expecting to spend the first 2 hours of the course focusing on selectors but it&#39;s been a while since I focused on CSS so it&#39;s time well spent.&lt;/p&gt;
 &lt;h4 id=&quot;work-examples&quot;&gt;Work examples &lt;a class=&quot;direct-link&quot; href=&quot;#work-examples&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
