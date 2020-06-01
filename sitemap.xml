@@ -32,6 +32,16 @@
   </url>
   
   <url>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/d3/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/interaction/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chrisvaillancourt.github.io/blog/tags/css/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
@@ -73,6 +83,11 @@
   
   <url>
     <loc>https://chrisvaillancourt.github.io/blog/posts/may-20-2020/</loc>
+    <lastmod>2020-05-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisvaillancourt.github.io/blog/posts/may-31-2020/</loc>
     <lastmod>2020-05-20</lastmod>
   </url>
 </urlset>
