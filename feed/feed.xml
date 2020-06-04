@@ -5,7 +5,7 @@
 	
 	<link href="https://chrisvaillancourt.github.io/blog/feed/feed.xml" rel="self"/>
 	<link href="https://chrisvaillancourt.github.io/blog/"/>
-	<updated>2020-06-01T17:00:00-07:00</updated>
+	<updated>2020-06-02T17:00:00-07:00</updated>
 	<id>https://chrisvaillancourt.github.io/blog/</id>
 	<author>
 		<name>Chris Vaillancourt</name>
@@ -351,11 +351,11 @@
 	</entry>
 	
 	<entry>
-		<title>100 Days of Code - Day 20</title>
+		<title>100 Days of Code - Day 21</title>
 		<link href="https://chrisvaillancourt.github.io/blog/posts/june-3-2020/"/>
-		<updated>2020-06-01T17:00:00-07:00</updated>
+		<updated>2020-06-02T17:00:00-07:00</updated>
 		<id>https://chrisvaillancourt.github.io/blog/posts/june-3-2020/</id>
-		<content type="html">&lt;h3 id=&quot;day-20%3A-june-3%2C-2020&quot;&gt;Day 20: June 3, 2020 &lt;a class=&quot;direct-link&quot; href=&quot;#day-20%3A-june-3%2C-2020&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+		<content type="html">&lt;h3 id=&quot;day-21%3A-june-3%2C-2020&quot;&gt;Day 21: June 3, 2020 &lt;a class=&quot;direct-link&quot; href=&quot;#day-21%3A-june-3%2C-2020&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;h4 id=&quot;today&#39;s-progress&quot;&gt;Today&#39;s Progress &lt;a class=&quot;direct-link&quot; href=&quot;#today&#39;s-progress&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Today I built out &lt;a href=&quot;https://chrisvaillancourt.github.io/resume/&quot;&gt;my resume&lt;/a&gt; (thank you &lt;a href=&quot;https://github.com/maxboeck/resume&quot;&gt;Max Böck&lt;/a&gt;) and refactored the animated line chart example. The refactor was simple and swapped a d3 namespace import for spearate, module imports.&lt;/p&gt;
 &lt;h4 id=&quot;thoughts&quot;&gt;Thoughts &lt;a class=&quot;direct-link&quot; href=&quot;#thoughts&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
