@@ -42,7 +42,12 @@
   </url>
   
   <url>
-    <loc>https://chrisvaillancourt.github.io/blog/tags/ES%20module%20imports/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/css/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/html/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
@@ -52,7 +57,7 @@
   </url>
   
   <url>
-    <loc>https://chrisvaillancourt.github.io/blog/tags/css/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/ES%20module%20imports/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
@@ -124,5 +129,10 @@
   <url>
     <loc>https://chrisvaillancourt.github.io/blog/posts/june-4-2020/</loc>
     <lastmod>2020-06-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisvaillancourt.github.io/blog/posts/june-5-2020/</loc>
+    <lastmod>2020-06-05</lastmod>
   </url>
 </urlset>
