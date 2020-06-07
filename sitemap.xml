@@ -37,17 +37,7 @@
   </url>
   
   <url>
-    <loc>https://chrisvaillancourt.github.io/blog/tags/map/</loc>
-    <lastmod>2020-04-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chrisvaillancourt.github.io/blog/tags/ES%20module%20imports/</loc>
-    <lastmod>2020-04-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chrisvaillancourt.github.io/blog/tags/semantic%20HTML/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/interaction/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
@@ -62,7 +52,17 @@
   </url>
   
   <url>
-    <loc>https://chrisvaillancourt.github.io/blog/tags/interaction/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/semantic%20HTML/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/ES%20module%20imports/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/map/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
@@ -134,5 +134,10 @@
   <url>
     <loc>https://chrisvaillancourt.github.io/blog/posts/june-5-2020/</loc>
     <lastmod>2020-06-05</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisvaillancourt.github.io/blog/posts/june-6-2020/</loc>
+    <lastmod>2020-06-06</lastmod>
   </url>
 </urlset>
