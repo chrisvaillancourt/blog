@@ -7,4 +7,4 @@ eleventyNavigation:
   order: 3
 ---
 
-I am a person that writes stuff.
+My blog isn't a blog&mdash;it's a <a href="https://joelhooks.com/digital-garden" rel="noreferrer noopener" target="_blank" >digital garden</a>.
