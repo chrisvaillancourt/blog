@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Days of Code - Day 29</title>
+    <meta name="Description" content="GeoJSON &amp; Esri JavaScript API">
+    <link rel="stylesheet" href="/blog/css/index.css">
+    <link rel="stylesheet" href="/blog/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/blog/feed/feed.xml" type="application/atom+xml" title="Dev Blog">
+  </head>
+  <body>
+    <header>
+      <h1 class="home"><a href="/blog/">Dev Blog</a></h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="/blog/">Home</a></li>
+        <li class="nav-item"><a href="/blog/posts/">Archive</a></li>
+        <li class="nav-item"><a href="/blog/about/">About Me</a></li>
+      </ul>
+    </header>
+
+    <main class="tmpl-post">
+
+      <h1>100 Days of Code - Day 29</h1>
+
+<h3 id="day-29%3A-june-12%2C-2020">Day 29: June 12, 2020 <a class="direct-link" href="#day-29%3A-june-12%2C-2020">#</a></h3>
+<h4 id="today's-progress">Today's Progress <a class="direct-link" href="#today's-progress">#</a></h4>
+<p>Today I built a map with locally hosted GeoJSON data.</p>
+<h4 id="thoughts">Thoughts <a class="direct-link" href="#thoughts">#</a></h4>
+<p>Not fully understanding the tech behind your tools can be a real detriment to your productivity. I spent a ton of time today trying to add web workers to the app but wasn't able to because of limited insight into the AMD loader used by the JS API.</p>
+<h4 id="work-examples">Work examples <a class="direct-link" href="#work-examples">#</a></h4>
+<p>Frequently, we make a map with GeoJSON data that's hosted on a third-party host (like the <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">USGS' Earthquakes feed</a>). This makes it easy to create a <a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html">GeoJSON layer</a> and add it to a map:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">var</span> url <span class="token operator">=</span> <span class="token string">"https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"</span><span class="token punctuation">;</span><br><span class="token keyword">var</span> geojsonLayer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GeoJSONLayer</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>          url<span class="token punctuation">,</span><br>          copyright<span class="token operator">:</span> <span class="token string">"USGS Earthquakes"</span><span class="token punctuation">,</span><br>          popupTemplate<span class="token punctuation">,</span> <span class="token comment">// defined separately</span><br>          renderer<span class="token punctuation">,</span> <span class="token comment">// defined separately</span><br>        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token keyword">var</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>          basemap<span class="token operator">:</span> <span class="token string">"gray-vector"</span><span class="token punctuation">,</span><br>          layers<span class="token operator">:</span> <span class="token punctuation">[</span>geojsonLayer<span class="token punctuation">]</span><br>        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>If we have a GegoJSON object (like one you may have created with <a href="https://github.com/d3/d3-fetch/tree/v1.1.2#json">d3-fetch</a>), you have to:</p>
+<ol>
+<li>create a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Blob">Blob</a></li>
+<li>Create a <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL">url DOMString</a></li>
+<li>Pass the url to the GeoJSONLayer class</li>
+</ol>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> FeatureLayer <span class="token keyword">from</span> <span class="token string">'esri/layers/FeatureLayer'</span><span class="token punctuation">;</span><br><span class="token keyword">import</span> GeoJSONLayer <span class="token keyword">from</span> <span class="token string">'esri/layers/GeoJSONLayer'</span><span class="token punctuation">;</span><br><span class="token keyword">import</span> <span class="token punctuation">{</span> json <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'d3-fetch'</span><span class="token punctuation">;</span><br><br><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">createEsriGeoJson</span><span class="token punctuation">(</span><span class="token parameter">geoJson</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">var</span> blob <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">new</span> <span class="token class-name">Blob</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>geoJson<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><br>    type<span class="token operator">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token keyword">var</span> url <span class="token operator">=</span> <span class="token constant">URL</span><span class="token punctuation">.</span><span class="token function">createObjectURL</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token keyword">var</span> geoJsonLayer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GeoJSONLayer</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>    url<span class="token punctuation">,</span><br>    outFields<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'*'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token keyword">return</span> geoJsonLayer<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">createCountyGeoJsonLyr</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">var</span> countyGeoJson <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">json</span><span class="token punctuation">(</span><br>    <span class="token string">'./geo-data/county-json/county_simplified_contig_albers.json'</span><br>  <span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token keyword">var</span> countyEsriGeoJson <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">createEsriGeoJson</span><span class="token punctuation">(</span>countyGeoJson<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token keyword">return</span> countyEsriGeoJson<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token keyword">var</span> countyGeoJson <span class="token operator">=</span> <span class="token function">createCountyGeoJsonLyr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token keyword">export</span> <span class="token punctuation">{</span> countyGeoJson <span class="token punctuation">}</span><span class="token punctuation">;</span><br></code></pre>
+
+
+<p><a href="/blog/">← Home</a></p>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Current page: /blog/posts/june12-2020/ -->
+  </body>
+</html>
