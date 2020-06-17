@@ -27,17 +27,12 @@
   </url>
   
   <url>
-    <loc>https://chrisvaillancourt.github.io/blog/tags/css/</loc>
-    <lastmod>2020-04-28</lastmod>
-  </url>
-  
-  <url>
     <loc>https://chrisvaillancourt.github.io/blog/tags/d3/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
-    <loc>https://chrisvaillancourt.github.io/blog/tags/interaction/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/jest/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
@@ -47,22 +42,12 @@
   </url>
   
   <url>
-    <loc>https://chrisvaillancourt.github.io/blog/tags/semantic%20HTML/</loc>
-    <lastmod>2020-04-28</lastmod>
-  </url>
-  
-  <url>
     <loc>https://chrisvaillancourt.github.io/blog/tags/vue/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
   <url>
-    <loc>https://chrisvaillancourt.github.io/blog/tags/html/</loc>
-    <lastmod>2020-04-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chrisvaillancourt.github.io/blog/tags/jest/</loc>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/semantic%20HTML/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
@@ -78,6 +63,21 @@
   
   <url>
     <loc>https://chrisvaillancourt.github.io/blog/tags/Esri%20JS%20API/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/css/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/html/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisvaillancourt.github.io/blog/tags/interaction/</loc>
     <lastmod>2020-04-28</lastmod>
   </url>
   
@@ -199,5 +199,10 @@
   <url>
     <loc>https://chrisvaillancourt.github.io/blog/posts/june-15-2020/</loc>
     <lastmod>2020-06-15</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisvaillancourt.github.io/blog/posts/june-16-20/</loc>
+    <lastmod>2020-06-16</lastmod>
   </url>
 </urlset>
